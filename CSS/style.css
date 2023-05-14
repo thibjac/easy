@@ -1301,3 +1301,71 @@ h7 {
   color: black;
   margin-bottom: 10px;
 }
+
+/* Tablet view */
+@media (max-width: 845px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .overlay-button {
+    font-size: 12px;
+  }
+  .card-title-font {
+    font-size: 20px;
+  }
+  .question-font {
+    font-size: 12px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  h4 {
+    font-size: 4px;
+  }
+  h5 {
+    font-size: 9px;
+  }
+  h6 {
+    font-size: 5px;
+  }
+  p {
+    font-size: 4px;
+  }
+  .overlay-button {
+    font-size: 8px;
+  }
+  .card-title-font {
+    font-size: 10px;
+  }
+  .question-font {
+    font-size: 8px;
+  }
+}
