@@ -42,61 +42,144 @@
 
     <main>
       <!-- Main image with text -->
-      <div
-        class="block h-full .\!w-screen homepage-img"
-        style="
-          background-image: url(images/thuisoplossing/copper.jpeg);
-          alt: EasyCharged opladen auto met home charger EV;
-          background-size: cover;
-          background-position: left;
-        "
-      >
-        <div
-          class="container text-left items-center content-start image-overlay"
-        >
-          <div class="row">
-            <div class="col-lg-6">
-              <h1>Gemakkelijk laden bij uw thuis.</h1>
-              <a href="#thuis">
-                <button class="overlay-button">Ontdek meer</button>
-              </a>
+      <div class="bg-black">
+        <div class="homepage">
+          <img
+            class="homepage-img"
+            src="images/thuisoplossing/copper.jpg"
+            alt="EasyCharged opladen van auto (EV) met thuislader"
+          />
+          <div class="homepage-text my-auto">
+            <div class="row p-0 m-0">
+              <div class="col-lg-6 p-0 m-0">
+                <h1>
+                  Ervaar het gemak en de diverse voordelen van laden bij uw
+                  thuis.
+                </h1>
+                <a href="#thuis">
+                  <button class="overlay-button">Ontdek meer</button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <!-- Main image with text -->
 
-      <!-- EV chargers at home -->
-      <div
-        class="container-fluid justify-content-between section-padding"
-        id="thuis"
-      >
-        <div class="row card-layout">
-          <div class="col-lg-6 px-0 flex">
-            <div class="my-auto">
-              <div>
-                <h5>Geen overbodige luxe</h5>
-                <h2 class="text-black">Een laadpaal voor thuis.</h2>
-                <p>
-                  Met een thuislaadpaal kunt u uw auto op uw gemak opladen,
-                  zonder dat u zich zorgen hoeft te maken over het vinden van
-                  een beschikbare openbare laadpaal. Dit kan u tijd en geld
-                  besparen en het bezit van een elektrische auto aangenamer
-                  maken. Bovendien zijn thuislaadstations eenvoudig te
-                  installeren en kunnen ze worden aangepast aan uw specifieke
-                  behoeften.
-                </p>
-              </div>
+      <!-- Voordelen -->
+      <div class="container-fluid section-padding bg-light-grey" id="voordelen">
+        <h3 class="text-black text-center">Voordelen</h3>
+        <div class="grid-4-2-1">
+          <div class="bg-black p-5 mx-3 mx-md-0">
+            <div class="h-100">
+              <i class="bi bi-clock-history adv-icon"></i>
+              <h6 class="adv-title mt-4">Tijdswinst en sneller laden</h6>
+              <p class="text-white mt-3">
+                Door het installeren van een laadpaal vermijd u files en
+                wachttijden aan een publiek laadstation. Bovendien laad uw wagen
+                hiermee tot wel 10 keer sneller op dan aan het stopcontact.
+              </p>
             </div>
           </div>
-          <div class="col-lg-5 col-12 p-0 flex align-items-center">
+
+          <div class="bg-black p-5 mx-3 mx-md-0">
+            <div class="h-100">
+              <i class="bi bi-credit-card adv-icon"></i>
+              <h6 class="adv-title mt-4">Goedkoper</h6>
+              <p class="text-white mt-3">
+                Thuis laden is goedkoper dan bij een publiek laadpunt.
+                Bovendien, vermijdt u de transportkosten om heen en terug naar
+                het openbare laadstation te gaan en kan u de laadtijden
+                aanpassen naargelang uw noden.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-black p-5 mx-3 mx-md-0">
+            <div class="h-100">
+              <i class="bi bi-shield-check adv-icon"></i>
+              <h6 class="adv-title mt-4">Veiliger</h6>
+              <p class="text-white mt-3">
+                Een thuislaadpaal is veiliger dan opladen via het stopcontact.
+                Thuislaadstations zijn uitgerust met verscheidene voorzieningen
+                i.v.m veiligheid die beschermen tegen overbelasting,
+                kortsluiting en andere elektrische gevaren.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-black p-5 mx-3 mx-md-0">
+            <div class="h-100">
+              <i class="bi bi-sun adv-icon"></i>
+              <h6 class="adv-title mt-4">Duurzaam</h6>
+              <p class="text-white mt-3">
+                Laad uw auto op met behulp van de krachtige en hernieuwbare
+                energie die wordt opgewekt door uw eigen zonnepanelen. Door deze
+                duurzame en ecologisch verantwoorde keuze te maken, draagt u
+                actief bij het verminderen van CO2-uitstoot.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Voordelen -->
+
+      <!-- EV chargers at home -->
+      <div id="thuis" class="container-fluid section-padding">
+        <div class="row justify-content-between bg-light-grey p-0 m-0">
+          <div class="col-12 col-lg-6 d-lg-flex p-0">
             <div>
               <img
+                class="responsive-img2"
                 src="images/thuisoplossing/born.jpg"
                 alt="..."
-                class="adaptive-img home-img"
               />
             </div>
+          </div>
+
+          <div class="col-12 col-lg-5 p-0 py-4 px-4 px-lg-0 mx-auto">
+            <div class="my-auto">
+              <h5>Geen overbodige luxe</h5>
+              <h2 class="text-black">Een laadpaal voor thuis.</h2>
+              <p class="pb-3">
+                Een van de belangrijkste voordelen van een thuislaadpaal is de
+                tijdsbesparing. In plaats van tijd te besteden aan het zoeken
+                naar een openbare laadpaal en wachten tot uw auto is opgeladen,
+                kunt u eenvoudig uw auto aansluiten op uw eigen laadpaal en uw
+                tijd efficiënter gebruiken. U kunt uw auto 's nachts opladen
+                terwijl u slaapt, zodat u elke ochtend met een volledig
+                opgeladen batterij kunt vertrekken.
+              </p>
+              <p class="pb-3">
+                Naast de tijdsbesparing biedt een thuislaadpaal ook financiële
+                voordelen. Thuis laden is over het algemeen goedkoper dan
+                openbare laadpunten. U kunt profiteren van gunstigere
+                elektriciteitstarieven en zelfs gebruikmaken van speciale
+                laadtarieven voor elektrische voertuigen. Door thuis te laden,
+                kunt u uw brandstofkosten aanzienlijk verlagen en geld besparen
+                op de lange termijn.
+              </p>
+              <p class="pb-3">
+                Thuislaadstations zijn ook eenvoudig te installeren en kunnen
+                worden aangepast aan uw specifieke behoeften. Of u nu een eigen
+                parkeerplaats heeft of gebruikmaakt van een gemeenschappelijke
+                parkeergarage, er zijn verschillende laadoplossingen beschikbaar
+                die passen bij uw situatie. U kunt kiezen uit wandladers,
+                laadpalen met vaste kabels of laadpunten met stopcontacten,
+                afhankelijk van uw voorkeur en installatiemogelijkheden.
+              </p>
+              <p>
+                Kortom, het installeren van een thuislaadpaal biedt tal van
+                voordelen. Het gemak, de tijds- en kostenbesparingen, het
+                comfort en de mogelijkheid om uw laadstation aan te passen aan
+                uw behoeften maken het bezit van een elektrische auto nog
+                aangenamer en praktischer. Investeer in een thuislaadpaal en
+                geniet van de vele voordelen die het met zich meebrengt.
+              </p>
+            </div>
+            <a href="#assortiment">
+              <button class="overlay-button">Ons assortiment</button>
+            </a>
           </div>
         </div>
       </div>
@@ -104,31 +187,29 @@
 
       <!-- Fiscaal voordeel -->
       <div class="container-fluid section-padding bg-light-grey">
-        <div class="row card-layout bg-black">
-          <div class="col-lg-6 col-12 p-0">
+        <div class="row justify-content-between bg-black p-0 m-0">
+          <div class="col-12 col-lg-6 d-lg-flex p-0">
             <div>
               <img
+                class="responsive-img2"
                 src="images/thuisoplossing/euro.jpg"
                 alt="..."
-                class="adaptive-img"
               />
             </div>
           </div>
-          <div class="col-lg-5 px-0 mx-auto">
-            <div class="my-5">
-              <div class="my-5">
-                <h5>Laadpalen voor thuis</h5>
-                <h2>Fiscale voordelen voor particulieren.</h2>
-                <p class="text-white">
-                  Om te transitie naar elektrische wagens aan te moedigen, biedt
-                  de overheid een belastingsvermindering aan voor de aanschaf en
-                  installatie van een thuislaadpaal. Afhankelijk van enkele
-                  voorwaarden kunt u in aanmerking komen voor een
-                  belastingvermindering tot 30% van de kosten van de laadpaal,
-                  met een maximum van € 1500 per laadpaal per
-                  belastingplichtige.
-                </p>
-              </div>
+
+          <div class="col-12 col-lg-5 flex p-0 py-4 px-4 px-lg-0 mx-auto">
+            <div class="my-auto">
+              <h5>Laadpalen voor thuis</h5>
+              <h2>Fiscale voordelen voor particulieren.</h2>
+              <p class="text-white">
+                Om te transitie naar elektrische wagens aan te moedigen, biedt
+                de overheid een belastingsvermindering aan voor de aanschaf en
+                installatie van een thuislaadpaal. Afhankelijk van enkele
+                voorwaarden kunt u in aanmerking komen voor een
+                belastingvermindering tot 30% van de kosten van de laadpaal, met
+                een maximum van € 1500 per laadpaal per belastingplichtige.
+              </p>
               <a href="fiscale_voordelen_thuis.html">
                 <button class="overlay-button">Meer informatie</button>
               </a>
@@ -138,69 +219,15 @@
       </div>
       <!-- Fiscaal voordeel -->
 
-      <!-- Voordelen -->
-      <div class="container-fluid section-padding" id="voordelen">
-        <h5 class="text-black text-center">Voordelen</h5>
-        <div class="row d-grid gap-cust-35 cols-4 card-layout">
-          <div class="col p-0 bg-light-grey">
-            <div class="m-5">
-              <i class="bi bi-clock-history option-icon"></i>
-              <h6 class="mt-3">Tijdswinst en sneller laden</h6>
-              <p class="text-black my-3">
-                Vermijd files en wachttijden aan een publiek laadstation.
-                Bovendien laad je tot 10 keer sneller op dan aan het
-                stopcontact.
-              </p>
-            </div>
-          </div>
-          <div class="col p-0 bg-light-grey">
-            <div class="m-5">
-              <i class="bi bi-credit-card option-icon"></i>
-              <h6 class="mt-3">Goedkoper</h6>
-              <p class="text-black my-3">
-                Thuis laden is goedkoper dan bij een publiek laadpunt.
-                Daarnaast, vermijdt u de transportkosten om heen en terug naar
-                het openbare laadstation te gaan.
-              </p>
-            </div>
-          </div>
-          <div class="col p-0 bg-light-grey">
-            <div class="m-5">
-              <i class="bi bi-shield-check option-icon"></i>
-              <h6 class="mt-3">Veiliger</h6>
-              <p class="text-black my-3">
-                Een thuislaadpaal is veiliger dan opladen via het stopcontact.
-                Thuislaadstations zijn uitgerust met veiligheidsvoorzieningen
-                die beschermen tegen overbelasting, kortsluiting en andere
-                elektrische gevaren.
-              </p>
-            </div>
-          </div>
-          <div class="col p-0 bg-light-grey">
-            <div class="m-5">
-              <i class="bi bi-sun option-icon"></i>
-              <h6 class="mt-3">Duurzaam</h6>
-              <p class="text-black my-3">
-                Laad uw auto op met energie van uw zonnepanelen. Draag bij aan
-                de groei van duurzame energie en de vermindering van
-                CO2-uitstoot.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- Dimensionering -->
-      <div
-        class="container-fluid justify-content-between section-padding bg-light-grey"
-      >
-        <div class="row card-layout">
-          <div class="col-lg-6 px-0 flex">
+      <div class="container-fluid section-padding justify-content-between">
+        <div class="row">
+          <div class="col-12 col-lg-5 p-0 m-0">
             <div class="my-auto">
               <div>
                 <h5>Eenvoudig de laadtijd bepalen</h5>
                 <h2 class="text-black">Het laadvermogen.</h2>
-                <p>
+                <p class="pb-3">
                   Als u overweegt een thuislaadpaal te plaatsen voor uw
                   elektrische auto, is het belangrijk om het juiste laadvermogen
                   te kiezen om ervoor te zorgen dat u uw auto snel en efficiënt
@@ -209,13 +236,13 @@
                   accu van uw auto, de elektrische installatie bij u thuis en uw
                   gewenst dagelijks rijbereik.
                 </p>
-                <p>
+                <p class="pb-3">
                   Stel dat uw elektrische auto een gemiddeld verbruik heeft van
                   17 kW per 100km, dan geeft de tabel een indicatie voor de
                   laadtijd die nodig is voor de elektrische wagen om een afstand
                   van 100 km te overbruggen.
                 </p>
-                <p>
+                <p class="pb-3">
                   Het is belangrijk op te merken dat de werkelijke oplaadtijd
                   kan variëren afhankelijk van verschillende factoren, zoals de
                   temperatuur, de leeftijd van de batterij, het type oplaadkabel
@@ -231,70 +258,80 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 flex">
-            <table class="table table-hover table-light text-center">
-              <thead>
-                <tr>
-                  <th scope="col">Laadvermogen</th>
-                  <th scope="col">Aantal fasen</th>
-                  <th scope="col">Elektrisch verbruik</th>
-                  <th scope="col">Afstand</th>
-                  <th scope="col">Tijd</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>2.3 kW (stopcontact)</td>
-                  <td>1 of 3</td>
-                  <td>17 kW</td>
-                  <td>100 km</td>
-                  <td>±7u23min</td>
-                </tr>
-                <tr>
-                  <td>3.3 kW</td>
-                  <td>1 of 3</td>
-                  <td>17 kW</td>
-                  <td>100 km</td>
-                  <td>±4u36min</td>
-                </tr>
-                <tr>
-                  <td>7.4 kW</td>
-                  <td>1</td>
-                  <td>17 kW</td>
-                  <td>100 km</td>
-                  <td>±2u18min</td>
-                </tr>
-                <tr>
-                  <td>11 kW</td>
-                  <td>3</td>
-                  <td>17 kW</td>
-                  <td>100 km</td>
-                  <td>±1u33min</td>
-                </tr>
-                <tr>
-                  <td>22 kW</td>
-                  <td>3</td>
-                  <td>17 kW</td>
-                  <td>100 km</td>
-                  <td>±46min</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="col-12 col-lg-6 flex p-0 mt-3 mt-lg-5 m-0">
+            <div class="table-responsive">
+              <table
+                class="table table-responsive align-middle table-hover table-light text-center"
+              >
+                <thead>
+                  <tr>
+                    <th class="p-4 text-nowrap" scope="col">Laadvermogen</th>
+                    <th class="p-4 text-nowrap" scope="col">Aantal fasen</th>
+                    <th class="p-4 text-nowrap" scope="col">
+                      Elektrisch verbruik
+                    </th>
+                    <th class="p-4 text-nowrap" scope="col">Afstand</th>
+                    <th class="p-4 text-nowrap" scope="col">Tijd</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-4">2.3 kW (stopcontact)</td>
+                    <td class="p-4">1 of 3</td>
+                    <td class="p-4">17 kW</td>
+                    <td class="p-4">100 km</td>
+                    <td class="p-4">±7u23min</td>
+                  </tr>
+                  <tr>
+                    <td class="p-4">3.3 kW</td>
+                    <td class="p-4">1 of 3</td>
+                    <td class="p-4">17 kW</td>
+                    <td class="p-4">100 km</td>
+                    <td class="p-4">±4u36min</td>
+                  </tr>
+                  <tr>
+                    <td class="p-4">7.4 kW</td>
+                    <td class="p-4">1</td>
+                    <td class="p-4">17 kW</td>
+                    <td class="p-4">100 km</td>
+                    <td class="p-4">±2u18min</td>
+                  </tr>
+                  <tr>
+                    <td class="p-4">11 kW</td>
+                    <td class="p-4">3</td>
+                    <td class="p-4">17 kW</td>
+                    <td class="p-4">100 km</td>
+                    <td class="p-4">±1u33min</td>
+                  </tr>
+                  <tr>
+                    <td class="p-4">22 kW</td>
+                    <td class="p-4">3</td>
+                    <td class="p-4">17 kW</td>
+                    <td class="p-4">100 km</td>
+                    <td class="p-4">±46min</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
       <!-- Dimensionering -->
 
-      <!-- Onze laadpalen -->
-      <div class="container-fluid section-padding">
+      <!-- Our products -->
+      <div
+        id="assortiment"
+        class="container-fluid section-padding bg-light-grey"
+      >
         <h3>Onze kwalitatieve thuislaadpalen</h3>
-        <p class="my-0">
-          Vergelijk al onze
-          <a class="text-primary" href="vergelijken.html#vergelijken"
-            >laadpalen.</a
-          >
+        <p class="mb-4 mt-0">
+          Nood aan een duidelijke overzicht?
+          <a class="text-primary" href="vergelijken.html">Vergelijk</a> al onze
+          laadpalen.
         </p>
-        <div class="row gap-4 text-center card-layout">
+        <div
+          class="row gap-4 text-center justify-content-center justify-content-sm-around p-0 m-0"
+        >
           <div class="col-auto flex p-0">
             <a href="pulsar.html">
               <div class="card card-box-shadow h-100">
@@ -312,7 +349,7 @@
             </a>
           </div>
           <div class="col-auto flex p-0">
-            <a href="smappee_ev_wall.html">
+            <a href="">
               <div class="card card-box-shadow h-100">
                 <div class="card-top">
                   <img
@@ -354,33 +391,38 @@
                   />
                 </div>
                 <div class="card-body my-0">
-                  <h6>Mennekes Amtron Compact 2.0s</h6>
+                  <h6>Mennekes Amtron Compatct 2.0s</h6>
                 </div>
               </div>
             </a>
           </div>
         </div>
+
+        <p class="mt-4 mb-0">
+          We voorzien bij elke laadstation professionele plaatsing en advies op
+          maat.
+        </p>
       </div>
 
-      <!-- Onze laadpalen -->
+      <!-- Our products -->
 
       <!-- EasyCharged -->
-      <div class="container-fluid justify-content-between section-padding">
-        <div class="row card-layout">
-          <div class="col-lg-5 col-12 p-0 flex align-items-center">
+      <div class="container-fluid section-padding">
+        <div class="row justify-content-between bg-light-grey p-0 m-0">
+          <div class="col-12 col-lg-5 flex p-0">
             <div>
               <img
+                class="responsive-img2"
                 src="images/thuisoplossing/interieur.jpg"
                 alt="..."
-                class="adaptive-img home-img"
               />
             </div>
           </div>
-          <div class="col-lg-6 px-0 flex">
+          <div class="col-lg-6 p-4">
             <div class="my-auto">
               <div>
                 <h5>Uw installateur</h5>
-                <h2 class="text-black">EasyCharged.</h2>
+                <h2 class="mb-4 text-black">EasyCharged.</h2>
                 <p>
                   Onze missie is om een veilige, efficiënte en betrouwbare
                   laadinfrastructuur te installeren en te onderhouden voor
@@ -392,8 +434,8 @@
                   duurzamere toekomst.
                 </p>
               </div>
-              <a href="#werkwijze">
-                <button class="overlay-button">Onze werkwijze</button>
+              <a href="contact.html">
+                <button class="overlay-button">Contacteer ons</button>
               </a>
             </div>
           </div>
@@ -401,25 +443,22 @@
       </div>
       <!-- EasyCharged -->
 
-      <!-- Werkwijze -->
-      <div class="container-fluid section-padding bg-white" id="werkwijze">
-        <h5 class="text-center">
+      <!-- Our way of working -->
+      <div class="container-fluid short-section-padding bg-darker-grey">
+        <h3 class="text-white text-center">
           Onze werkwijze voor een zo best mogelijke service
-        </h5>
-        <div class="row mb-4">
-          <div class="col-auto mb-4">
-            <div
-              class="bg-light-grey h-100 position-relative"
-              style="max-width: 230px"
-            >
+        </h3>
+        <div class="grid-5-4-3-2-1">
+          <div>
+            <div class="bg-light-grey h-100 position-relative">
               <div
-                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto my-4 position-relative border border-white"
+                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 position-relative border border-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="50"
-                  fill="currentColor"
+                  fill="#12ce69"
                   class="bi bi-fingerprint"
                   viewBox="0 0 16 16"
                 >
@@ -440,7 +479,7 @@
                   />
                 </svg>
               </div>
-              <div class="px- text-center">
+              <div class="text-center">
                 <h4>STAP 1</h4>
                 <p class="text-black m-3">
                   Vraag een gratis offerte aan of krijg advies op maat tijdens
@@ -449,19 +488,16 @@
               </div>
             </div>
           </div>
-          <div class="col-auto mb-4">
-            <div
-              class="bg-light-grey h-100 position-relative"
-              style="max-width: 230px"
-            >
+          <div>
+            <div class="bg-light-grey h-100 position-relative">
               <div
-                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto my-4 position-relative border border-white"
+                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 position-relative border border-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="50"
-                  fill="currentColor"
+                  fill="#12ce69"
                   class="bi bi-envelope-paper"
                   viewBox="0 0 16 16"
                 >
@@ -470,7 +506,7 @@
                   />
                 </svg>
               </div>
-              <div class="px- text-center">
+              <div class="text-center">
                 <h4>STAP 2</h4>
                 <p class="text-black m-3">
                   Ontvang uw gepersonaliseerde offerte met gedetailleerde
@@ -479,19 +515,16 @@
               </div>
             </div>
           </div>
-          <div class="col-auto mb-4">
-            <div
-              class="bg-light-grey h-100 position-relative"
-              style="max-width: 230px"
-            >
+          <div>
+            <div class="bg-light-grey h-100 position-relative">
               <div
-                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto my-4 position-relative border border-white"
+                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 position-relative border border-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="50"
-                  fill="currentColor"
+                  fill="#12ce69"
                   class="bi bi-calendar2-date"
                   viewBox="0 0 16 16"
                 >
@@ -506,7 +539,7 @@
                   />
                 </svg>
               </div>
-              <div class="px- text-center">
+              <div class="text-center">
                 <h4>STAP 3</h4>
                 <p class="text-black m-3">
                   Bij overeenkomst wordt een gepaste plaatsingsdatum afgesproken
@@ -515,19 +548,16 @@
               </div>
             </div>
           </div>
-          <div class="col-auto mb-4">
-            <div
-              class="bg-light-grey h-100 position-relative"
-              style="max-width: 230px"
-            >
+          <div>
+            <div class="bg-light-grey h-100 position-relative">
               <div
-                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto my-4 position-relative border border-white"
+                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 position-relative border border-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="50"
-                  fill="currentColor"
+                  fill="#12ce69"
                   class="bi bi-ev-station"
                   viewBox="0 0 16 16"
                 >
@@ -539,7 +569,7 @@
                   />
                 </svg>
               </div>
-              <div class="px- text-center">
+              <div class="text-center">
                 <h4>STAP 4</h4>
                 <p class="text-black m-3">
                   Op de ingeplande datum wordt de installatie geplaatst gevolgd
@@ -548,19 +578,16 @@
               </div>
             </div>
           </div>
-          <div class="col-auto mb-4">
-            <div
-              class="bg-light-grey h-100 position-relative"
-              style="max-width: 230px"
-            >
+          <div>
+            <div class="bg-light-grey h-100 position-relative">
               <div
-                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto my-4 position-relative border border-white"
+                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 position-relative border border-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="50"
-                  fill="currentColor"
+                  fill="#12ce69"
                   class="bi bi-clipboard-check"
                   viewBox="0 0 16 16"
                 >
@@ -576,7 +603,7 @@
                   />
                 </svg>
               </div>
-              <div class="px- text-center">
+              <div class="text-center">
                 <h4>STAP 5</h4>
                 <p class="text-black m-3">
                   Een onafhankelijke keuringsmaatschappij keurt de installatie
@@ -590,7 +617,7 @@
           <button class="overlay-button">Vraag een gratis offerte aan</button>
         </a>
       </div>
-      <!-- werkwijze -->
+      <!-- Our way of working -->
     </main>
 
     <my-footer></my-footer>

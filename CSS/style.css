@@ -150,7 +150,7 @@ hr {
 }
 
 .dropdown-item:hover {
-  color: #adb5bd;
+  color: #dadada;
   background-color: white;
   padding-left: 25px;
   transition: 0.4s;
@@ -181,7 +181,7 @@ hr {
   }
 
   .dropdown-item:hover {
-    color: #adb5bd;
+    color: #dadada;
     background-color: black;
     padding-left: 25px;
     transition: 0.4s;
@@ -252,14 +252,14 @@ hr {
   color: black;
   margin: 0;
   font-family: Arial;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 700;
   padding: 11px 20px;
   text-decoration: none;
   white-space: nowrap;
 }
 .button-offerte:hover {
-  background-color: #adb5bd;
+  background-color: #dadada;
   color: white;
 }
 
@@ -358,6 +358,12 @@ hr {
   grid-gap: 1.5rem;
 }
 
+.grid-4-2-1 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 1.5rem;
+}
+
 .card-box-shadow2 {
   transition: all 150ms linear;
   -webkit-box-shadow: 0px 0px 6px 2px rgba(167, 167, 167, 0.69);
@@ -453,7 +459,7 @@ hr {
 
 .overlay-button:hover {
   color: #ffffff;
-  background-color: #adb5bd;
+  background-color: #dadada;
 }
 
 /* Three cards */
@@ -490,7 +496,7 @@ hr {
 
 .overlay-button3 {
   color: #ffffff;
-  background-color: #adb5bd;
+  background-color: #dadada;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 62px;
@@ -565,7 +571,7 @@ hr {
 }
 
 .short-section-padding {
-  padding: 60px 90px 112px 90px;
+  padding: 60px 90px 60px 90px;
   margin: 0;
 }
 
@@ -695,7 +701,7 @@ footer {
   /*padding-right: 2rem;
   padding-top: 12px;
   padding-bottom: 10px;*/
-  color: #adb5bd;
+  color: #dadada;
 }
 
 .socials-icon:hover {
@@ -760,12 +766,20 @@ footer {
   background-color: #f8f8f8;
 }
 
+.text-light-grey {
+  color: #f8f8f8;
+}
+
 .bg-darker-grey {
-  background-color: #adb5bd;
+  background-color: #dadada;
 }
 
 .bg-green {
   background-color: #12ce69;
+}
+
+.text-green {
+  color: #12ce69;
 }
 
 .ml {
@@ -935,7 +949,7 @@ footer {
 }
 
 .has-search {
-  border: #adb5bd solid 2px;
+  border: #dadada solid 2px;
   border-radius: 6px;
 }
 
@@ -1010,9 +1024,14 @@ footer {
   color: white;
 }
 
-.option-icon {
-  font-size: 34px;
+.adv-icon {
+  font-size: 50px;
   color: #12ce69;
+}
+
+.adv-title {
+  color: #dadada;
+  font-size: 26px;
 }
 
 .cols-3 {
@@ -1547,5 +1566,17 @@ h7 {
 @media only screen and (max-width: 992px) {
   .responsive-img2 {
     max-height: 550px;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .grid-4-2-1 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .grid-4-2-1 {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

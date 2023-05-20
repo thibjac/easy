@@ -248,7 +248,7 @@ class MyFooter extends HTMLElement {
 
             <!-- Item (button) -->
             <a href="contact.html#gratis_offerte">
-            <button class="button-offerte mt-2 mb-0 my-sm-4" href="contact.html#gratis_offerte">GRATIS OFFERTE</button>
+            <button class="button-offerte mt-4 mb-0 my-sm-4" href="contact.html#gratis_offerte">GRATIS OFFERTE</button>
             </a>
             <!-- Item (button) -->
 
@@ -267,7 +267,7 @@ class MyFooter extends HTMLElement {
                   <a href=""><i class="bi bi-linkedin socials-icon"></i></a>
                 </div>
                 <div class="col-auto socials-icon">
-                  <a href=""><i class="bi bi-facebook socials-icon"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100093048693141"><i class="bi bi-facebook socials-icon"></i></a>
                 </div>
                 <div class="col-auto socials-icon">
                   <a href=""><i class="bi bi-instagram socials-icon"></i></a>
