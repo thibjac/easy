@@ -12,10 +12,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Nunito+Sans:wght@700&family=Overpass:wght@800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&family=Overpass:wght@800&display=swap"
       rel="stylesheet"
     />
 
@@ -41,33 +39,26 @@
 
     <main>
       <!-- Main image with text -->
-      <div
-        class="block h-full .\!w-screen homepage-img w-100"
-        style="
-          background-image: url(images/principal1.jpg);
-          alt: EasyCharged opladen auto met home charger EV;
-          background-size: cover;
-          background-position: left;
-        "
-      >
-        <div
-          class="container text-left items-center content-start image-overlay"
-        >
-          <div class="row">
-            <div class="col-7">
-              <h1>Gemakkelijk laden bij uw thuis of op het werk.</h1>
-              <p class="text-white">
-                Of u nu thuis bent of op het werk, onze laadpalen bieden u een
-                snelle en efficiënte laadoplossing. Geen gedoe meer met het
-                zoeken naar een publieke laadpaal en geen zorgen over de
-                beschikbaarheid ervan.
-              </p>
-              <p class="text-white">
-                Wij bouwen aan een duurzame toekomst, doet u mee?
-              </p>
-              <a href="#thuis">
-                <button class="overlay-button">Ontdek meer</button>
-              </a>
+      <div class="bg-black">
+        <div class="homepage">
+          <img class="homepage-img" src="images/principal1.jpg" alt="" />
+          <div class="homepage-text my-auto">
+            <div class="row p-0 m-0">
+              <div class="col-lg-6 p-0 m-0">
+                <h1>Gemakkelijk laden bij uw thuis of op het werk.</h1>
+                <p class="text-white pb-4">
+                  Of u nu thuis bent of op het werk, onze laadpalen bieden u een
+                  snelle en efficiënte laadoplossing. Geen gedoe meer met het
+                  zoeken naar een publieke laadpaal en geen zorgen over de
+                  beschikbaarheid ervan.
+                </p>
+                <p class="text-white pb-4">
+                  Wij bouwen aan een duurzame toekomst, doet u mee?
+                </p>
+                <a href="#thuis">
+                  <button class="overlay-button">Ontdek meer</button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -75,42 +66,42 @@
       <!-- Main image with text -->
 
       <!-- EV chargers at home -->
-      <div
-        class="container-fluid justify-content-between section-padding"
-        id="thuis"
-      >
-        <div class="row card-layout">
-          <div class="col-lg-5 col-12 p-0 flex align-items-center">
-            <div>
-              <img
-                src="images/home_charging.jpg"
-                alt="..."
-                class="adaptive-img"
-              />
+      <div class="container-fluid section-padding" id="thuis">
+        <div class="row justify-content-between bg-light-grey p-0 m-0">
+          <div class="col-12 col-lg-6 p-4">
+            <div class="my-auto">
+              <h5>Laadpalen voor thuis</h5>
+              <h2 class="text-black">Een comfortabele thuisoplossing.</h2>
+              <p class="pb-4">
+                Met onze laadpalen voor thuis hoeft u niet meer op zoek naar een
+                openbare laadpaal om uw elektrische auto op te laden. Daarbij
+                zijn onze laadpalen geschikt voor alle soorten elektrische
+                auto's en zorgen ze voor een gepaste en efficiënte
+                laadoplossing.
+              </p>
+              <p>
+                Kies voor gemak, betrouwbaarheid en duurzaamheid met onze
+                laadpalen voor thuis. Neem vandaag nog de stap naar elektrisch
+                rijden en geniet van de voordelen die onze laadoplossingen te
+                bieden hebben. Doe mee aan de groeiende beweging naar een
+                emissievrije toekomst en ervaar de vrijheid en efficiëntie van
+                elektrisch laden met onze hoogwaardige laadpalen. Onze
+                installateurs installeren uw laadpaal veilig en vakkundig.
+                Bovendien heeft EasyCharged een breed assortiment aan laadpalen,
+                voor elk wat wils.
+              </p>
             </div>
+            <a href="thuisoplossing.html">
+              <button class="overlay-button">Meer thuisoplossingen</button>
+            </a>
           </div>
 
-          <div class="col-lg-6 px-0 flex">
-            <div class="my-auto">
-              <div>
-                <h5>Laadpalen voor thuis</h5>
-                <h2 class="text-black">Een comfortabele thuisoplossing.</h2>
-                <p>
-                  Met onze laadpalen voor thuis hoeft u niet meer op zoek naar
-                  een openbare laadpaal om uw elektrische auto op te laden. Onze
-                  laadpalen zijn geschikt voor alle soorten elektrische auto's
-                  en zorgen voor een snelle en efficiënte laadoplossing.
-                </p>
-                <p>
-                  Onze installateurs installeren uw laadpaal veilig en
-                  vakkundig. Bovendien heeft EasyCharged een breed assoritiment
-                  aan laadpalen, voor elk wat wils.
-                </p>
-              </div>
-              <a href="thuisoplossing.html">
-                <button class="overlay-button">Meer thuisoplossingen</button>
-              </a>
-            </div>
+          <div class="col-12 col-lg-5 p-0">
+            <img
+              class="responsive-img2"
+              src="images/home_charging.jpg"
+              alt="..."
+            />
           </div>
         </div>
       </div>
@@ -118,37 +109,47 @@
 
       <!-- EV chargers for companies -->
       <div class="container-fluid section-padding bg-light-grey">
-        <div class="row card-layout bg-black">
-          <div class="col-lg-5 px-0 mx-auto">
-            <div class="my-5">
-              <div class="my-5">
-                <h5>Laadpalen voor bedrijven</h5>
-                <h2>Laden op de werkvloer.</h2>
-                <p class="text-white">
-                  Door een laadpaal te installeren op uw bedrijfsterrein, kunt u
-                  uw werknemers en klanten een handige en milieuvriendelijke
-                  manier bieden om hun elektrische auto op te laden.
-                </p>
-                <p class="text-white">
-                  We bieden een breed scala aan modellen, zodat u de laadpaal
-                  kunt kiezen die het beste bij uw bedrijf past. Onze laadpalen
-                  zijn niet alleen efficiënt en veilig, maar ook gemakkelijk te
-                  gebruiken.
-                </p>
-              </div>
-              <a href="bedrijfsoplossing.html">
-                <button class="overlay-button">Meer bedrijfsoplossingen</button>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-6 col-12 p-0">
+        <div class="row justify-content-between bg-black p-0 m-0">
+          <div class="col-12 col-lg-6 d-lg-flex p-0">
             <div>
               <img
+                class="responsive-img2"
                 src="images/company_charging.jpg"
                 alt="..."
-                class="adaptive-img"
               />
             </div>
+          </div>
+
+          <div class="col-12 col-lg-5 p-0 py-4 px-4 px-lg-0 mx-auto">
+            <div class="my-auto">
+              <h5>Laadpalen voor bedrijven</h5>
+              <h2>Laden op de werkvloer.</h2>
+              <p class="text-white pb-4">
+                Door een laadpaal te installeren op uw bedrijfsterrein, kunt u
+                uw werknemers en klanten een handige en milieuvriendelijke
+                manier bieden om hun elektrische auto op te laden. Hiermee toont
+                u ook uw betrokkenheid bij duurzaamheid en draagt u bij aan het
+                verminderen van de CO2-uitstoot. Bovendien bieden wij niet
+                alleen standaard laadpalen, maar ook geavanceerde
+                laadoplossingen die aan specifieke behoeften voldoen. Denk
+                bijvoorbeeld aan laadpalen met meerdere aansluitingen, zodat
+                meerdere voertuigen tegelijkertijd kunnen worden opgeladen. Dit
+                is vooral handig als uw bedrijf meerdere elektrische auto's
+                heeft of als er een hoog volume aan laadverzoeken kent.
+              </p>
+              <p class="text-white">
+                We bieden een breed scala aan modellen, zodat u de laadpaal kunt
+                kiezen die het beste bij uw bedrijf past. Of u nu een klein
+                bedrijf bent met een beperkt aantal elektrische auto's of een
+                groot bedrijf met een uitgebreid wagenpark, wij hebben de juiste
+                laadoplossing voor uw specifieke behoeften. Onze laadpalen zijn
+                niet alleen efficiënt en veilig, maar ook gemakkelijk te
+                gebruiken.
+              </p>
+            </div>
+            <a href="bedrijfsoplossing.html">
+              <button class="overlay-button">Meer bedrijfsoplossingen</button>
+            </a>
           </div>
         </div>
       </div>
@@ -156,14 +157,10 @@
 
       <!-- (Fiscal) advantages for companies and at home -->
       <div class="container-fluid section-padding">
-        <div class="row gap-cust-35 card-layout">
+        <div class="row gap-cust-35 p-0 m-0">
           <div
-            class="col-lg col-12 flex p-0 border-0 bg-black justify-content-center box-shadow"
-            style="
-              height: 780px;
-              background: url(images/home_card_1.jpg) no-repeat center;
-              background-size: auto 850px;
-            "
+            class="col-xl col-12 flex p-0 border-0 bg-black background-card"
+            style="background: url(images/home_card_1.jpg)"
           >
             <div class="px-5 flex flex-column justify-content-between">
               <p class="col-6 w-full card-small-title-font">PARTICULIER</p>
@@ -171,20 +168,14 @@
                 Haal fiscaal voordeel uit uw laadpaal
               </h2>
               <a class="col-2 w-full" href="fiscale_voordelen_thuis.html">
-                <button class="overlay-button1">
-                  Fiscale voordelen voor particulieren
-                </button>
+                <button class="overlay-button2">Fiscale voordelen thuis</button>
               </a>
             </div>
           </div>
 
           <div
-            class="col-lg col-12 flex p-0 border-0 bg-green justify-content-center box-shadow"
-            style="
-              height: 780px;
-              background: url(images/firm_card_2.jpg) no-repeat center;
-              background-size: auto 850px;
-            "
+            class="col-xl col-12 flex p-0 border-0 bg-green background-card"
+            style="background: url(images/firm_card_2.jpg)"
           >
             <div class="px-5 flex flex-column justify-content-between">
               <p class="col-6 w-full card-small-title-font">BEDRIJF</p>
@@ -192,38 +183,36 @@
                 Haal fiscaal voordeel uit uw laadpaal
               </h2>
               <a class="col-2 w-full" href="fiscale_voordelen_bedrijven.html">
-                <button class="overlay-button2">
-                  Fiscale voordelen voor bedrijven
+                <button class="overlay-button1">
+                  Fiscale voordelen bedrijf
                 </button>
               </a>
             </div>
           </div>
 
           <div
-            class="col-lg col-12 flex p-0 border-0 bg-darker-grey justify-content-center box-shadow"
-            style="
-              height: 780px;
-              background: url(images/adv_card_3.jpg) no-repeat center;
-              background-size: auto 850px;
-            "
+            class="col-xl col-12 flex p-0 border-0 bg-green justify-content-center background-card"
+            style="background: url(images/adv_card_3.jpg)"
           >
             <div class="px-5 flex flex-column justify-content-between">
               <p class="col-6 w-full card-small-title-font">
-                PARTICULIER + BEDRIJF
+                PARTICULIER EN BEDRIJF
               </p>
               <h2 class="col-2 w-full card-title-font">
-                Andere algemene voordelen van een laadpaal installatie
+                Andere voordelen van een laadpaal installatie
               </h2>
-              <a class="col-2 w-full" href="thuisoplossing.html#voordelen">
-                <button class="overlay-button3 mb-0">
-                  Voordelen voor thuis
-                </button>
-              </a>
-              <a class="col-2 w-full" href="bedrijfsoplossing.html#voordelen">
-                <button class="overlay-button3">
-                  Voordelen voor bedrijven
-                </button>
-              </a>
+              <div class="row justify-content-start p-0 m-0">
+                <div class="col-auto p-0 pb-xl-3 me-4 mb-sm-0 mb-2">
+                  <a href="thuisoplossing.html#voordelen">
+                    <button class="overlay-button3 mb-0">Thuis</button>
+                  </a>
+                </div>
+                <div class="col-auto p-0 m-0">
+                  <a href="bedrijfsoplossing.html#voordelen">
+                    <button class="overlay-button3">Bedrijf</button>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -233,210 +222,198 @@
       <!-- Our products -->
       <div class="container-fluid section-padding bg-light-grey">
         <h3>Onze laadpalen</h3>
-        <p class="my-0">
+        <p>
           Opzoek naar oplossingen voor uw bedrijf? Ontdek al onze
           <a class="text-primary" href="vergelijken.html">bedrijfslaadpalen</a>.
         </p>
-        <p class="my-0">
+        <p>
           Een thuisstation aan het overwegen? Ontdek al onze
           <a class="text-primary" href="vergelijken.html">thuislaadpalen</a>.
         </p>
-        <p class="my-0">
+        <p class="mb-4 mt-0">
           Nood aan een duidelijke overzicht?
           <a class="text-primary" href="vergelijken.html">Vergelijk</a> al onze
           laadstations.
         </p>
-        <div class="row gap-4 text-center card-layout">
-          <div class="col-auto flex p-0">
+        <div class="row gap-4 text-center justify-content-between p-0 m-0">
+          <div class="col p-0 m-0">
             <a href="">
-              <div class="card card-box-shadow2 h-100">
-                <div class="card-top" style="height: 170px">
+              <div class="card card-box-shadow2 h-100 p-3">
+                <div class="card-top card-product-img mb-4">
                   <img
-                    class="product-img3"
+                    class="responsive-img"
                     src="images/products/product_small_2.png"
                     alt="..."
                   />
                 </div>
-                <div class="card-body my-0 ps-2 pe-2 pb-3 pt-0">
+                <div class="card-body m-0 p-0">
                   <h6>Wallbox Copper Business SB</h6>
                 </div>
               </div>
             </a>
           </div>
-          <div class="col-auto flex p-0">
+
+          <div class="col p-0 m-0">
             <a href="">
-              <div class="card card-box-shadow2 h-100">
-                <div class="card-top" style="height: 170px">
+              <div class="card card-box-shadow2 h-100 p-3">
+                <div class="card-top card-product-img mb-4">
                   <img
-                    class="product-img3"
+                    class="responsive-img"
                     src="images/products/product_small_1.png"
                     alt="..."
                   />
                 </div>
-                <div class="card-body my-0 ps-2 pe-2 pb-3 pt-0">
+                <div class="card-body m-0 p-0">
                   <h6>Wallbox Pulsar Plus</h6>
                 </div>
               </div>
             </a>
           </div>
-          <div class="col-auto flex p-0">
+
+          <div class="col p-0 m-0">
             <a href="">
-              <div class="card card-box-shadow2 h-100">
-                <div class="card-top" style="height: 170px">
+              <div class="card card-box-shadow2 h-100 p-3">
+                <div class="card-top card-product-img mb-4">
                   <img
-                    class="product-img3"
+                    class="responsive-img"
                     src="images/products/product_small_5.png"
                     alt="..."
                   />
                 </div>
-                <div class="card-body my-0 ps-2 pe-2 pb-3 pt-0">
+                <div class="card-body m-0 p-0">
                   <h6>Smappee EV Wall</h6>
                 </div>
               </div>
             </a>
           </div>
-          <div class="col-auto flex p-0">
+
+          <div class="col p-0 m-0">
             <a href="">
-              <div class="card card-box-shadow2 h-100">
-                <div class="card-top" style="height: 170px">
+              <div class="card card-box-shadow2 h-100 p-3">
+                <div class="card-top card-product-img mb-4">
                   <img
-                    class="product-img3"
+                    class="responsive-img"
                     src="images/products/product_small_6.png"
                     alt="..."
                   />
                 </div>
-                <div class="card-body my-0 ps-2 pe-2 pb-3 pt-0">
+                <div class="card-body m-0 p-0">
                   <h6>Easee Home</h6>
                 </div>
               </div>
             </a>
           </div>
-          <div class="col-auto flex p-0">
+
+          <div class="col p-0 m-0">
             <a href="">
-              <div class="card card-box-shadow2 h-100">
-                <div class="card-top" style="height: 170px">
+              <div class="card card-box-shadow2 h-100 p-3">
+                <div class="card-top card-product-img mb-4">
                   <img
-                    class="product-img3"
+                    class="responsive-img"
                     src="images/products/product_small_10.png"
                     alt="..."
                   />
                 </div>
-                <div class="card-body my-0 ps-2 pe-2 pb-3 pt-0">
+                <div class="card-body m-0 p-0">
                   <h6>Smappee EV Base</h6>
                 </div>
               </div>
             </a>
           </div>
-          <div class="col-auto flex p-0">
+
+          <div class="col p-0 m-0">
             <a href="">
-              <div class="card card-box-shadow2 h-100">
-                <div class="card-top" style="height: 170px">
+              <div class="card card-box-shadow2 h-100 p-3">
+                <div class="card-top card-product-img mb-4">
                   <img
-                    class="product-img3"
+                    class="responsive-img"
                     src="images/products/product_small_13.png"
                     alt="..."
                   />
                 </div>
-                <div class="card-body my-0 ps-2 pe-2 pb-3 pt-0">
+                <div class="card-body m-0 p-0">
                   <h6>Mennekes Amtron Professional +</h6>
                 </div>
               </div>
             </a>
           </div>
         </div>
-        <p class="my-0">
+
+        <p class="mt-4 mb-0">
           We voorzien bij elke laadstation professionele plaatsing en advies op
           maat.
         </p>
       </div>
       <!-- Our products -->
 
-      <!-- Our brands 
+      <!-- Our brands -->
       <div class="container-fluid section-padding">
         <h3>Onze merken</h3>
-        <div class="row gap-cust-35 d-grid cols-3 card-layout">
-          <div
-            class="col-lg col-12 flex py-3 bg-white justify-content-center align-items-center box-shadow"
-          >
+        <div class="grid-3-2-1 text-center justify-content-between grid">
+          <div class="bg-white box-shadow py-3 px-5" style="height: 72px">
             <img
+              class="responsive-img my-auto mx-auto"
               src="images/logos/alfen_logo.png"
               alt=""
-              class="h-full"
-              style="height: 40px"
             />
           </div>
 
-          <div
-            class="col-lg col-12 flex py-3 bg-white justify-content-center align-items-center box-shadow"
-          >
+          <div class="bg-white box-shadow py-3 px-5" style="height: 72px">
             <img
+              class="responsive-img my-auto mx-auto"
               src="images/logos/wallbox_logo.png"
               alt=""
-              class="h-full"
-              style="height: 40px"
             />
           </div>
 
-          <div
-            class="col-lg col-12 flex py-3 bg-white justify-content-center align-items-center box-shadow"
-          >
+          <div class="bg-white box-shadow py-3 px-5" style="height: 72px">
             <img
+              class="responsive-img my-auto mx-auto"
               src="images/logos/smappee_logo.png"
               alt=""
-              class="h-full"
-              style="height: 40px"
             />
           </div>
 
-          <div
-            class="col-lg col-12 flex py-3 bg-white justify-content-center align-items-center box-shadow"
-          >
+          <div class="bg-white box-shadow py-3 px-5" style="height: 72px">
             <img
+              class="responsive-img my-auto mx-auto"
               src="images/logos/mennekes_logo.png"
               alt=""
-              class="h-full"
-              style="height: 40px"
             />
           </div>
-          <div
-            class="col-lg col-12 flex py-3 bg-white justify-content-center align-items-center box-shadow"
-          >
+
+          <div class="bg-white box-shadow py-3 px-5" style="height: 72px">
             <img
+              class="responsive-img my-auto mx-auto"
               src="images/logos/elinta_charge_logo.png"
               alt=""
-              class="h-full"
-              style="height: 40px"
             />
           </div>
-          <div
-            class="col-lg col-12 flex py-3 bg-white justify-content-center align-items-center box-shadow"
-          >
+
+          <div class="bg-white box-shadow py-3 px-5" style="height: 72px">
             <img
+              class="responsive-img my-auto mx-auto"
               src="images/logos/easee_logo.png"
               alt=""
-              class="h-full"
-              style="height: 40px"
             />
           </div>
         </div>
       </div>
-       Our brands -->
+      <!-- Our brands -->
 
       <!-- EasyCharged -->
-      <div
-        class="container-fluid justify-content-between section-padding bg-light-grey"
-      >
-        <div class="row card-layout">
-          <div class="col-lg-5 col-12 p-0 flex align-items-center">
-            <div>
-              <img src="images/EC_logo.png" alt="..." class="adaptive-img" />
+      <div class="container-fluid section-padding bg-light-grey">
+        <div class="row justify-content-between bg-light-grey p-0 m-0">
+          <div class="col-12 col-lg-5 flex p-0">
+            <div class="m-auto px-4 px-sm-0">
+              <img class="ec-logo" src="images/EC_logo.png" alt="..." />
             </div>
           </div>
-          <div class="col-lg-6 px-0 flex">
+          <div class="col-lg-6 px-0 mt-4 mt-lg-0">
             <div class="my-auto">
               <div>
                 <h5>Uw installateur</h5>
-                <h2 class="text-black">EasyCharged.</h2>
+                <h2 class="mb-4 text-black">EasyCharged.</h2>
                 <p>
                   Wij zijn toegewijd aan het creëren van een veilige, efficiënte
                   en betrouwbare infrastructuur voor het opladen van elektrische
@@ -458,22 +435,19 @@
       <!-- EasyCharged -->
 
       <!-- Our way of working -->
-      <div class="container-fluid short-section-padding bg-banner-grey">
-        <h3>Onze werkwijze</h3>
-        <div class="row mb-4">
-          <div class="col-auto mb-4">
-            <div
-              class="bg-light-grey h-100 position-relative"
-              style="max-width: 230px"
-            >
+      <div class="container-fluid short-section-padding bg-black">
+        <h3 class="text-white">Onze werkwijze</h3>
+        <div class="grid-5-4-3-2-1">
+          <div>
+            <div class="bg-light-grey h-100 position-relative">
               <div
-                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto my-4 position-relative border border-white"
+                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 position-relative border border-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="50"
-                  fill="currentColor"
+                  fill="#12ce69"
                   class="bi bi-fingerprint"
                   viewBox="0 0 16 16"
                 >
@@ -494,7 +468,7 @@
                   />
                 </svg>
               </div>
-              <div class="px- text-center">
+              <div class="text-center">
                 <h4>STAP 1</h4>
                 <p class="text-black m-3">
                   Vraag een gratis offerte aan of krijg advies op maat tijdens
@@ -503,19 +477,16 @@
               </div>
             </div>
           </div>
-          <div class="col-auto mb-4">
-            <div
-              class="bg-light-grey h-100 position-relative"
-              style="max-width: 230px"
-            >
+          <div>
+            <div class="bg-light-grey h-100 position-relative">
               <div
-                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto my-4 position-relative border border-white"
+                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 position-relative border border-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="50"
-                  fill="currentColor"
+                  fill="#12ce69"
                   class="bi bi-envelope-paper"
                   viewBox="0 0 16 16"
                 >
@@ -524,7 +495,7 @@
                   />
                 </svg>
               </div>
-              <div class="px- text-center">
+              <div class="text-center">
                 <h4>STAP 2</h4>
                 <p class="text-black m-3">
                   Ontvang uw gepersonaliseerde offerte met gedetailleerde
@@ -533,19 +504,16 @@
               </div>
             </div>
           </div>
-          <div class="col-auto mb-4">
-            <div
-              class="bg-light-grey h-100 position-relative"
-              style="max-width: 230px"
-            >
+          <div>
+            <div class="bg-light-grey h-100 position-relative">
               <div
-                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto my-4 position-relative border border-white"
+                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 position-relative border border-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="50"
-                  fill="currentColor"
+                  fill="#12ce69"
                   class="bi bi-calendar2-date"
                   viewBox="0 0 16 16"
                 >
@@ -560,7 +528,7 @@
                   />
                 </svg>
               </div>
-              <div class="px- text-center">
+              <div class="text-center">
                 <h4>STAP 3</h4>
                 <p class="text-black m-3">
                   Bij overeenkomst wordt een gepaste plaatsingsdatum afgesproken
@@ -569,19 +537,16 @@
               </div>
             </div>
           </div>
-          <div class="col-auto mb-4">
-            <div
-              class="bg-light-grey h-100 position-relative"
-              style="max-width: 230px"
-            >
+          <div>
+            <div class="bg-light-grey h-100 position-relative">
               <div
-                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto my-4 position-relative border border-white"
+                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 position-relative border border-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="50"
-                  fill="currentColor"
+                  fill="#12ce69"
                   class="bi bi-ev-station"
                   viewBox="0 0 16 16"
                 >
@@ -593,7 +558,7 @@
                   />
                 </svg>
               </div>
-              <div class="px- text-center">
+              <div class="text-center">
                 <h4>STAP 4</h4>
                 <p class="text-black m-3">
                   Op de ingeplande datum wordt de installatie geplaatst gevolgd
@@ -602,19 +567,16 @@
               </div>
             </div>
           </div>
-          <div class="col-auto mb-4">
-            <div
-              class="bg-light-grey h-100 position-relative"
-              style="max-width: 230px"
-            >
+          <div>
+            <div class="bg-light-grey h-100 position-relative">
               <div
-                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto my-4 position-relative border border-white"
+                class="steps-icon font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 position-relative border border-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="50"
-                  fill="currentColor"
+                  fill="#12ce69"
                   class="bi bi-clipboard-check"
                   viewBox="0 0 16 16"
                 >
@@ -630,7 +592,7 @@
                   />
                 </svg>
               </div>
-              <div class="px- text-center">
+              <div class="text-center">
                 <h4>STAP 5</h4>
                 <p class="text-black m-3">
                   Een onafhankelijke keuringsmaatschappij keurt de installatie
@@ -641,7 +603,7 @@
           </div>
         </div>
         <a href="werkwijze.html">
-          <button class="overlay-button">Meer uitleg</button>
+          <button class="overlay-button mt-5">Meer info</button>
         </a>
       </div>
       <!-- Our way of working -->
@@ -653,71 +615,130 @@
           ><h4>Bekijk al het nieuws <i class="bi bi-arrow-right"></i></h4
         ></a>
 
-        <div class="row gap-cust-35 card-layout">
+        <div class="row gap-cust-35 p-0 m-0">
           <div class="col-lg col-12 flex p-0">
-            <a href="">
-              <div class="card h-100 w-100 bg-black text-white border-0">
-                <div class="image-box">
-                  <img
-                    src="images/cards/card_1.jpg"
-                    class="card-img-top scale-image"
-                    alt="..."
-                  />
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text text-white">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
+            <div class="card h-100 bg-black text-white border-0">
+              <div class="card-img-top overflow-hidden">
+                <img
+                  src="https://img.static-rmg.be/a/view/q75/w1200/h627/3425317/e71ad5e2873a5fc72bd874905c3437a2-jpg.jpg"
+                  class="news-card-img scale-image-effect"
+                />
+                <div class="position-absolute bg-light-grey date-style">
+                  20 dec. 2021
                 </div>
               </div>
-            </a>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Is er een belastingvoordeel voor laadpalen?
+                </h5>
+                <p class="card-text text-white">
+                  Als je als particulier een laadpaal laat installeren bij je
+                  woning, dan krijg je daar sinds 1 september 2021 een
+                  belastingvermindering voor.
+                </p>
+              </div>
+              <div class="card-footer bg-black pt-0 ps-4 pe-4 pb-4 m-0">
+                <div
+                  class="row justify-content-between align-items-center p-0 m-0"
+                >
+                  <div class="col-auto p-0 m-0">
+                    <a
+                      href="artikels/is_er_een_belastingvoordeel_voor_laadpalen.html"
+                    >
+                      <button class="overlay-button m-0">Lees meer</button>
+                    </a>
+                  </div>
+                  <div class="col-auto p-0 my-3 ms-2">
+                    <i class="bi bi-clock-history"> 2 min.</i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="col-lg col-12 flex p-0">
-            <a href="">
-              <div class="card h-100 w-100 bg-black text-white border-0">
-                <div class="image-box">
-                  <img
-                    src="images/cards/card_2.jpg"
-                    class="card-img-top scale-image"
-                    alt="..."
-                  />
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text text-white">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This card has even longer
-                    content than the first to show that equal height action.
-                  </p>
+            <div class="card h-100 bg-black text-white border-0">
+              <div class="card-img-top overflow-hidden">
+                <img
+                  src="https://img.static-rmg.be/a/view/q75/w1200/h627/3424763/3988a627a256686fdbd50b420236d460-jpg.jpg"
+                  class="news-card-img scale-image-effect"
+                  alt="..."
+                />
+                <div class="position-absolute bg-light-grey date-style">
+                  13 okt. 2021
                 </div>
               </div>
-            </a>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Wat beïnvloedt de actieradius of range van een elektrische
+                  wagen?
+                </h5>
+                <p class="card-text text-white">
+                  Hoe ver kan je elektrisch rijden vooraleer je - zonder stroom
+                  - stilvalt? De actieradius of range van een elektrische auto
+                  wordt bepaald door de capaciteit van zijn batterij en zijn
+                  verbruik.
+                </p>
+              </div>
+              <div class="card-footer bg-black pt-0 ps-4 pe-4 pb-4 m-0">
+                <div
+                  class="row justify-content-between align-items-center p-0 m-0"
+                >
+                  <div class="col-auto p-0 m-0">
+                    <a
+                      href="artikels/wat_beïnvloedt_de_actieradius_of_range_van_een_elektrische_wagen.html"
+                    >
+                      <button class="overlay-button m-0">Lees meer</button>
+                    </a>
+                  </div>
+                  <div class="col-auto p-0 my-3 ms-2">
+                    <i class="bi bi-clock-history"> 2 min.</i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="col-lg col-12 flex p-0">
-            <a href="">
-              <div class="card h-100 w-100 bg-black text-white border-0">
-                <div class="image-box">
-                  <img
-                    src="images/cards/card_3.jpg"
-                    class="card-img-top scale-image"
-                    alt="..."
-                  />
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text text-white">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This card has even longer
-                    content than the first to show that equal height action.
-                  </p>
+            <div class="card h-100 bg-black text-white border-0">
+              <div class="card-img-top overflow-hidden">
+                <img
+                  src="https://img.static-rmg.be/a/view/q75/w1200/h627/3424373/95cb72cfdbdf85b456004acf05331cd4-jpg.jpg"
+                  class="news-card-img scale-image-effect"
+                  alt="..."
+                />
+                <div class="position-absolute bg-light-grey date-style">
+                  13 dec. 2021
                 </div>
               </div>
-            </a>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Wat kan ik doen om mijn EV in de winter optimaal te laten
+                  presteren?
+                </h5>
+                <p class="card-text text-white">
+                  Koude temperaturen zijn niet bevorderlijk voor de werking van
+                  een batterij. Naarmate het kwik daalt, wordt de
+                  elektrolytvloeistof in de accucellen trager, wat resulteert...
+                </p>
+              </div>
+              <div class="card-footer bg-black pt-0 ps-4 pe-4 pb-4 m-0">
+                <div
+                  class="row justify-content-between align-items-center p-0 m-0"
+                >
+                  <div class="col-auto p-0 m-0">
+                    <a
+                      href="artikels/wat_kan_ik_doen_om_mijn_EV_in_de_winter_optimaal_te_laten_presteren.html"
+                    >
+                      <button class="overlay-button m-0">Lees meer</button>
+                    </a>
+                  </div>
+                  <div class="col-auto p-0 my-3 ms-2">
+                    <i class="bi bi-clock-history"> 2 min.</i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -725,14 +746,14 @@
 
       <!-- FAQ -->
       <div class="container-fluid short-section-padding">
-        <div class="row">
-          <div class="col-5">
+        <div class="row p-0 m-0">
+          <div class="col-12 col-sm-5 p-0 m-0">
             <h3 class="text-left">Veelgestelde vragen</h3>
             <a href="faq.html"
               ><h4>Bekijk alle vragen <i class="bi bi-arrow-right"></i></h4
             ></a>
           </div>
-          <div class="col-7">
+          <div class="col-12 col-sm-7 p-0 m-0">
             <div class="accordion" id="accordionPanelsStayOpenExample">
               <div class="accordion-item">
                 <hr />
@@ -871,7 +892,7 @@
                       Bij het opladen van een elektrische auto is het belangrijk
                       dat de juiste type stekker gebruikt wordt. Dit geldt zowel
                       voor de laadpaal als de auto. De Type 2 stekker wordt
-                      altijd gebruikt voor auto’s en laadstations in zowel
+                      altijd gebruikt voor auto's en laadstations in zowel
                       Europa als de Verenigde Staten. Daardoor is het vrij
                       uitzonderlijk dat u een laadstation niet kan gebruiken. Er
                       bestaan bovendien twee soorten laadpalen, namelijk
