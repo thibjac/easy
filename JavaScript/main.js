@@ -39,7 +39,7 @@ class MyHeader extends HTMLElement {
               <!-- Item -->
               <li class="nav-item my-auto">
                 <a
-                  class="nav-link nav-link active"
+                  class="nav-link active"
                   href="index.html"
                   aria-current="page"
                   >Home</a
@@ -49,59 +49,58 @@ class MyHeader extends HTMLElement {
 
               <!-- Dropdown item -->
               <li class="nav-item my-auto dropdown">
-                <a
-                  class="nav-link nav-link dropdown-toggle large-hover"
+                <div
+                  class="nav-link dropdown-toggle large-hover"
                   data-bs-toggle="dropdown"
                   href="#"
                   role="button"
                   aria-expanded="false"
-                  >Laadpaal thuis</a
-                >
+                  >Laadpaal thuis</div>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="thuisoplossing.html">Thuisoplossingen</a></li>
                   <li><a class="dropdown-item" href="thuisoplossing.html#voordelen">Voordelen</a></li>
-                  <li><a class="dropdown-item" href="fiscale_voordelen_thuis.html">*Fiscale voordelen</a></li>
-                  <li><a class="dropdown-item" href="#">*Onze laadpalen</a></li>
-                  <li><a class="dropdown-item" href="#">*Offerte aanvragen</a></li>
+                  <li><a class="dropdown-item" href="fiscale_voordelen_thuis.html">Fiscale voordelen</a></li>
+                  <li><a class="dropdown-item" href="thuisoplossing.html#assortiment">Onze laadpalen</a></li>
+                  <li><a class="dropdown-item" href="contact.html#gratis_offerte">Offerte aanvragen</a></li>
                 </ul>
               </li>
               <!-- Dropdown item -->
 
               <!-- Dropdown item -->
               <li class="nav-item my-auto dropdown">
-                <a
-                  class="nav-link nav-link dropdown-toggle large-hover"
+                <div
+                  class="nav-link dropdown-toggle large-hover"
                   data-bs-toggle="dropdown"
                   href="#"
                   role="button"
                   aria-expanded="false"
-                  >Laadpaal bedrijf</a
+                  >Laadpaal bedrijf</div
                 >
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="bedrijfsoplossing.html">Laadoplossingen</a></li>
                   <li><a class="dropdown-item" href="bedrijfsoplossing.html#voordelen">Voordelen</a></li>
-                  <li><a class="dropdown-item" href="fiscale_voordelen_bedrijven.html">*Fiscale voordelen</a></li>
-                  <li><a class="dropdown-item" href="#">*Onze laadpalen</a></li>
-                  <li><a class="dropdown-item" href="#">*Offerte aanvragen</a></li>
+                  <li><a class="dropdown-item" href="fiscale_voordelen_bedrijven.html">Fiscale voordelen</a></li>
+                  <li><a class="dropdown-item" href="bedrijfsoplossing.html#assortiment">Onze laadpalen</a></li>
+                  <li><a class="dropdown-item" href="contact.html#gratis_offerte">Offerte aanvragen</a></li>
                 </ul>
               </li>
               <!-- Dropdown item -->
 
               <!-- Item -->
               <li class="nav-item my-auto">
-                <a class="nav-link nav-link" href="werkwijze.html">Werkwijze</a>
+                <a class="nav-link" href="werkwijze.html">Werkwijze</a>
               </li>
               <!-- Item -->
 
               <!-- Item -->
               <li class="nav-item my-auto dropdown">
-                <a
-                  class="nav-link nav-link dropdown-toggle large-hover"
+                <div
+                  class="nav-link dropdown-toggle large-hover"
                   data-bs-toggle="dropdown"
                   href="#"
                   role="button"
                   aria-expanded="false"
-                  >Nieuws en advies</a
+                  >Nieuws en advies</div
                 >
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="nieuws.html">Nieuws & blog</a></li>
@@ -115,19 +114,19 @@ class MyHeader extends HTMLElement {
 
               <!-- Item -->
               <li class="nav-item my-auto">
-                <a class="nav-link nav-link" href="over_ons.html">Over ons</a>
+                <a class="nav-link" href="over_ons.html">Over ons</a>
               </li>
               <!-- Item -->
 
               <!-- Item -->
               <li class="nav-item my-auto dropdown" style="margin-right: 20px">
-                <a
-                  class="nav-link nav-link dropdown-toggle large-hover"
+                <div
+                  class="nav-link dropdown-toggle large-hover"
                   data-bs-toggle="dropdown"
                   href="contact.html"
                   role="button"
                   aria-expanded="false"
-                  >Contact</a
+                  >Contact</div
                 >
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="contact.html">Contact opnemen</a></li>
@@ -167,7 +166,7 @@ class MyFooter extends HTMLElement {
               <img
                 class="footer-logo adaptive-img"
                 src="images/EasyCharged_logo_black.png"
-                alt="EasyCharged Installatie Laadpalen"
+                alt="EasyCharged installatie laadpalen"
               />
             </div>
           </div>
