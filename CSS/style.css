@@ -837,6 +837,28 @@ footer {
   grid-gap: 35px;
 }
 
+/*                */
+/*   ERROR PAGE   */
+/*                */
+.error-container {
+  margin-top: 90px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.error-text {
+  color: black;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.error-gif {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  background-position: center;
+  margin: 0;
+  height: 300px;
+  max-width: 900px;
+}
+
 /*              */
 /* CONTACT PAGE */
 /*              */
