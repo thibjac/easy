@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>EasyCharged | Plaatsing laadpalen</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&family=Overpass:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="JavaScript/main.js"></script>
+  </head>
+
+  <body>
+    <!--Navigation bar-->
+    <my-header></my-header>
+    <!--end of Navigation bar-->
+
+    <main>
+      <div class="bg-white" style="height: 100vh"></div>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="offerte-modal"
+        tabindex="-1"
+        data-bs-backdrop="static"
+        aria-labelledby="offerte-modalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-green" id="offerte-modalLabel">
+                Gelukt!
+              </h5>
+              <a href="contact.html#gratis_offerte"
+                ><button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button
+              ></a>
+            </div>
+            <div class="modal-body">
+              We bedanken u voor de interesse in EasyCharged en proberen zo snel
+              mogelijk contact met u op te nemen voor een afspraak ter plaatse.
+            </div>
+            <div class="modal-footer">
+              <a href="contact.html#gratis_offerte"
+                ><button
+                  type="button"
+                  class="overlay-button2 m-0"
+                  data-bs-dismiss="modal"
+                >
+                  Sluiten
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+    </main>
+
+    <!--Footer-->
+    <my-footer></my-footer>
+    <!--End of footer-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="" async defer></script>
+    <script>
+      var myModal = new bootstrap.Modal(
+        document.getElementById("offerte-modal"),
+        {}
+      );
+      myModal.show();
+    </script>
+  </body>
+</html>

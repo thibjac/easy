@@ -185,7 +185,7 @@
               <input
                 type="hidden"
                 name="_next"
-                value="https://easycharged.eu/success.html"
+                value="https://easycharged.eu/vraag-success.html"
               />
               <div class="col-md-6 p-0">
                 <label for="inputName" class="form-label">Voornaam*</label>
@@ -252,65 +252,14 @@
               </div>
               <div class="col-12 p-0">
                 <!-- button with onclick event that triggers the form validation. If the form is valid, triggers click of second button -->
-                <button
-                  type="submit"
-                  class="overlay-button3 mb-0 mt-4"
-                  onclick="if(validateForm()) { $('#triggerModal1').click(); }"
-                >
+                <button type="submit" class="overlay-button3 mb-0 mt-4">
                   Verzenden
                 </button>
-
-                <!-- hidden submit button -->
-                <button
-                  type="button"
-                  id="triggerModal1"
-                  hidden
-                  data-bs-toggle="modal"
-                  data-bs-target="#vragen-modal"
-                ></button>
               </div>
             </form>
           </div>
         </div>
       </div>
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        id="vragen-modal"
-        tabindex="-1"
-        aria-labelledby="vragen-modalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title text-black" id="vragen-modalLabel">
-                Gelukt!
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              EasyCharged heeft u vraag goed ontvangen. We proberen u zo snel
-              mogelijk verder te helpen.
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="overlay-button2 m-0"
-                data-bs-dismiss="modal"
-              >
-                Sluiten
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal -->
       <!-- Questions -->
 
       <!-- Free consultation -->
@@ -333,7 +282,7 @@
               <input
                 type="hidden"
                 name="_next"
-                value="https://easycharged.eu/success.html"
+                value="https://easycharged.eu/offerte-success.html"
               />
 
               <div class="col-md-6 p-0">
@@ -500,22 +449,9 @@
 
               <div class="col-12 p-0">
                 <!-- button with onclick event that triggers the form validation. If the form is valid, triggers click of second button -->
-                <button
-                  type="submit"
-                  class="overlay-button3 mb-0 mt-4"
-                  onclick="if(validateForm()) { $('#triggerModal2').click(); }"
-                >
+                <button type="submit" class="overlay-button3 mb-0 mt-4">
                   Verzenden
                 </button>
-
-                <!-- hidden submit button -->
-                <button
-                  type="button"
-                  id="triggerModal2"
-                  hidden
-                  data-bs-toggle="modal"
-                  data-bs-target="#offerte-modal"
-                ></button>
               </div>
             </form>
           </div>
@@ -541,50 +477,13 @@
           </div>
         </div>
       </div>
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        id="offerte-modal"
-        tabindex="-1"
-        aria-labelledby="offerte-modalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title text-black" id="offerte-modalLabel">
-                Gelukt!
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              We bedanken u voor de interesse in EasyCharged en proberen zo snel
-              mogelijk contact met u op te nemen voor een afspraak ter plaatse.
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="overlay-button2 m-0"
-                data-bs-dismiss="modal"
-              >
-                Sluiten
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal -->
       <!-- Free consultation -->
     </main>
 
     <!--Footer-->
     <my-footer></my-footer>
     <!--End of footer-->
+
     <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
       (function validateForm() {

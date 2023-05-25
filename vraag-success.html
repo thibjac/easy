@@ -38,21 +38,50 @@
     <!--end of Navigation bar-->
 
     <main>
-      <div class="container-fluid section-padding">
-        <div class="card text-center">
-          <div class="card-header">Bericht</div>
-          <div class="card-body">
-            <h5 class="card-title">
-              We hebben uw bericht succesvol ontvangen en nemen binnenkort
-              contact met u op.
-            </h5>
-            <p class="card-text">Ga terug naar de contact pagina.</p>
-            <a href="contact.html">
-              <button class="overlay-button">Contact pagina</button>
-            </a>
+      <div class="bg-white" style="height: 100vh"></div>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="vraag-modal"
+        tabindex="-1"
+        data-bs-backdrop="static"
+        aria-labelledby="vraag-modalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-green" id="vraag-modalLabel">
+                Gelukt!
+              </h5>
+              <a href="contact.html#vragen"
+                ><button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button
+              ></a>
+            </div>
+            <div class="modal-body">
+              EasyCharged heeft u vraag goed ontvangen. We proberen u zo snel
+              mogelijk verder te helpen.
+            </div>
+            <div class="modal-footer">
+              <a href="contact.html#vragen">
+                <button
+                  type="button"
+                  class="overlay-button2 m-0"
+                  data-bs-dismiss="modal"
+                >
+                  Sluiten
+                </button></a
+              >
+            </div>
           </div>
         </div>
       </div>
+      <!-- Modal -->
     </main>
 
     <!--Footer-->
@@ -64,5 +93,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="" async defer></script>
+    <script>
+      var myModal = new bootstrap.Modal(
+        document.getElementById("vraag-modal"),
+        {}
+      );
+      myModal.show();
+    </script>
   </body>
 </html>
