@@ -1433,9 +1433,10 @@ footer {
 }
 
 .product-option-img {
-  width: 100%;
-  height: 550px;
-  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 20%;
+  min-height: 350px;
 }
 
 .option-title {

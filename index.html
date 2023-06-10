@@ -44,6 +44,39 @@
 
       gtag("config", "G-W2FTHKKSLF");
     </script>
+    <script>
+      var xhr = new XMLHttpRequest();
+      fetch("https://api.ipify.org?format=json")
+        .then((response) => response.json())
+        .then((data) => {
+          var today = new Date();
+          var date =
+            today.getFullYear() +
+            "-" +
+            (today.getMonth() + 1) +
+            "-" +
+            today.getDate();
+          var time =
+            today.getHours() +
+            ":" +
+            today.getMinutes() +
+            ":" +
+            today.getSeconds();
+          xhr.open(
+            "POST",
+            "https://script.google.com/macros/s/AKfycbyCWD6pLJJKv3iruwZXD3O9w1V912T9yfsQECUBmmgv_KKwfItesHfk8cUiQiQYsI1W/exec?action=addUser",
+            true
+          );
+          xhr.send(
+            JSON.stringify({
+              ip: data.ip,
+              browser: navigator.userAgent,
+              os: navigator.platform,
+              date: date + " " + time,
+            })
+          );
+        });
+    </script>
   </head>
 
   <body>
