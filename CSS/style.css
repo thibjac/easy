@@ -868,6 +868,10 @@ footer {
 /*              */
 /* CONTACT PAGE */
 /*              */
+.spinner-border {
+  width: 28px;
+  height: 28px;
+}
 
 .homepage-img2 {
   min-height: 780px;

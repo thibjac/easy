@@ -252,9 +252,23 @@
               </div>
               <div class="col-12 p-0">
                 <!-- button with onclick event that triggers the form validation. If the form is valid, triggers click of second button -->
-                <button type="submit" class="overlay-button3 mb-0 mt-4">
-                  Verzenden
+                <button
+                  id="verzenden"
+                  type="submit"
+                  class="overlay-button3 mt-4 mb-0"
+                >
+                  <div class="d-flex align-items-center">
+                    <div
+                      id="spinner"
+                      class="spinner-border text-green p-0 m-0 display-none"
+                      role="status"
+                    ></div>
+                  </div>
+                  <div id="text">Verzenden</div>
                 </button>
+                <div id="check" class="invalid-feedback display-none">
+                  Gelieve alle verplichte velden correct in te vullen.
+                </div>
               </div>
             </form>
           </div>
@@ -449,9 +463,23 @@
 
               <div class="col-12 p-0">
                 <!-- button with onclick event that triggers the form validation. If the form is valid, triggers click of second button -->
-                <button type="submit" class="overlay-button3 mb-0 mt-4">
-                  Verzenden
+                <button
+                  id="verzenden"
+                  type="submit"
+                  class="overlay-button3 mt-4 mb-0"
+                >
+                  <div class="d-flex align-items-center">
+                    <div
+                      id="spinner"
+                      class="spinner-border text-green p-0 m-0 display-none"
+                      role="status"
+                    ></div>
+                  </div>
+                  <div id="text">Verzenden</div>
                 </button>
+                <div id="check" class="invalid-feedback display-none">
+                  Gelieve alle verplichte velden correct in te vullen.
+                </div>
               </div>
             </form>
           </div>
@@ -493,6 +521,7 @@
         const forms = document.querySelectorAll(".needs-validation");
 
         // Loop over them and prevent submission
+
         Array.from(forms).forEach((form) => {
           form.addEventListener(
             "submit",
@@ -500,6 +529,12 @@
               if (!form.checkValidity()) {
                 event.preventDefault();
                 event.stopPropagation();
+                form.querySelector("#check").style.display = "block";
+              } else {
+                form.querySelector("#verzenden").style.cursor = "wait";
+                form.querySelector("#check").style.display = "none";
+                form.querySelector("#spinner").style.display = "block";
+                form.querySelector("#text").style.display = "none";
               }
 
               form.classList.add("was-validated");
