@@ -266,7 +266,7 @@ class MyFooter extends HTMLElement {
                   <a href=""><i class="bi bi-linkedin socials-icon"></i></a>
                 </div>
                 <div class="col-auto socials-icon">
-                  <a href="https://www.facebook.com/profile.php?id=61550036950538"><i class="bi bi-facebook socials-icon"></i></a>
+                  <a href="https://www.facebook.com/EasyCharged"><i class="bi bi-facebook socials-icon"></i></a>
                 </div>
                 <div class="col-auto socials-icon">
                   <a href=""><i class="bi bi-instagram socials-icon"></i></a>
