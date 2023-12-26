@@ -518,6 +518,128 @@ hr {
   background-color: #dadada;
 }
 
+/* IMAGE GALLERY OF PROJECTS */
+/* Styles for the overlay */
+.gallery-overlay {
+  display: none;
+  position: fixed;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+/* Styles for the enlarged image container */
+.image-container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-box {
+  position: absolute;
+  text-align: center;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  display: flex; /* Add this property to enable flexbox layout */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+@media (max-width: 499px) {
+  .imagezoom {
+    max-height: 250px;
+    width: auto;
+    object-fit: scale-down;
+  }
+}
+
+/* Styles for the close button (X) */
+.close-button {
+  font-size: 42px;
+  width: 56px;
+  height: 56px;
+  top: 0;
+  right: 0;
+}
+
+/* Styles for navigation buttons */
+.nav-button {
+  top: 50%;
+  font-size: 30px;
+}
+
+.prev-button {
+  padding: 9px 7px 5px 5px;
+  left: 0px;
+}
+
+.next-button {
+  padding: 9px 5px 5px 7px;
+  right: 0px;
+}
+
+/* Style for the image itself */
+.enlarged-image {
+  max-width: 60vw;
+  max-height: 80vh;
+  object-fit: scale-down;
+}
+
+/* Media query for screens larger than X */
+@media screen and (max-width: 712px) {
+  .enlarged-image {
+    max-width: 90vw; /* Updated max-width for screens larger than X */
+    max-height: 80vh; /* Updated max-height for screens larger than X */
+  }
+}
+
+/* Styles for the gallery container and images */
+.gallery {
+  column-count: 4;
+  column-gap: 24px;
+}
+
+@media (max-width: 1199px) {
+  .gallery {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 991px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 667px) {
+  .gallery {
+    column-count: 1;
+  }
+}
+
+.gallery img {
+  display: inline-block;
+  margin-bottom: 24px;
+  width: 100%;
+  border-radius: 0;
+  transition: 250ms 50ms;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.gallery:hover img:not(:hover) {
+  filter: saturate(0.2) opacity(0.5);
+}
+
 /* Three cards */
 .card-small-title-font {
   color: white;

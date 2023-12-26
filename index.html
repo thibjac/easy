@@ -72,6 +72,8 @@
               ip: data.ip,
               browser: navigator.userAgent,
               os: navigator.platform,
+              screenWidth: window.innerWidth,
+              screenHeight: window.innerHeight,
               date: date + " " + time,
             })
           );
@@ -659,6 +661,38 @@
       </div>
       <!-- Our way of working -->
 
+      <!-- Image gallery -->
+      <div class="container-fluid section-padding">
+        <h3 class="text-black">Gallerij</h3>
+        <div class="gallery" id="imageGallery"></div>
+        <div class="gallery-overlay" id="gallery-overlay">
+          <div class="image-container">
+            <div class="button-box close-button" onclick="closeImage()">
+              <i style="margin-top: 8px" class="bi bi-x"></i>
+            </div>
+
+            <img
+              id="enlarged-image"
+              class="enlarged-image"
+              alt="Enlarged Image"
+            />
+            <div
+              class="button-box nav-button prev-button"
+              onclick="showPreviousImage()"
+            >
+              <i class="bi bi-chevron-left"></i>
+            </div>
+            <div
+              class="button-box nav-button next-button"
+              onclick="showNextImage()"
+            >
+              <i class="bi bi-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Image gallery -->
+
       <!-- Latest news and blog -->
       <div class="container-fluid section-padding bg-light-grey">
         <h3>Laatste nieuws en blogs</h3>
@@ -1144,6 +1178,102 @@
     <!--Footer-->
     <my-footer></my-footer>
     <!--End of footer-->
+    <script>
+      let currentImageIndex = 0;
+      let imageZoomElements = document.querySelectorAll(".imagezoom");
+      document.addEventListener("DOMContentLoaded", function () {
+        // Function to generate a random order list of image paths
+        function generateRandomImageOrder() {
+          const imagePaths = [];
+
+          // Generate an array of image paths
+          for (let i = 1; i <= 28; i++) {
+            const imageNumber = i.toString().padStart(2, "0"); // Format XX as 01, 02, etc.
+            const imagePath = `images/projects/image000${imageNumber}.jpeg`;
+            imagePaths.push(imagePath);
+          }
+
+          // Randomly shuffle the array
+          for (let i = imagePaths.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [imagePaths[i], imagePaths[j]] = [imagePaths[j], imagePaths[i]];
+          }
+
+          return imagePaths;
+        }
+
+        // Function to create and append img elements to the gallery
+        function createImageGallery(imageList) {
+          const gallery = document.getElementById("imageGallery");
+
+          imageList.forEach((imageName, index) => {
+            const img = document.createElement("img");
+            img.classList.add("imagezoom");
+            img.src = imageName;
+            img.alt = `Project image ${index + 1}`;
+            gallery.appendChild(img);
+          });
+        }
+
+        // Get the random image order list
+        const randomImageOrder = generateRandomImageOrder();
+
+        // Create and append img elements to the gallery
+        createImageGallery(randomImageOrder);
+
+        imageZoomElements = document.querySelectorAll(".imagezoom");
+
+        imageZoomElements.forEach((element, index) => {
+          element.addEventListener("click", function () {
+            currentImageIndex = index;
+            openImage(element.src, element.alt);
+            updateNavButtonVisibility();
+          });
+        });
+      });
+
+      function openImage(src, alt) {
+        const enlargedImage = document.getElementById("enlarged-image");
+        enlargedImage.src = src;
+        enlargedImage.alt = alt;
+        document.getElementById("gallery-overlay").style.display = "flex";
+      }
+
+      function closeImage() {
+        document.getElementById("gallery-overlay").style.display = "none";
+      }
+
+      function updateNavButtonVisibility() {
+        const prevButton = document.querySelector(".prev-button");
+        const nextButton = document.querySelector(".next-button");
+
+        prevButton.style.display = currentImageIndex > 0 ? "block" : "none";
+        nextButton.style.display =
+          currentImageIndex < imageZoomElements.length - 1 ? "block" : "none";
+      }
+
+      function showPreviousImage() {
+        if (currentImageIndex > 0) {
+          currentImageIndex--;
+          openImage(
+            imageZoomElements[currentImageIndex].src,
+            imageZoomElements[currentImageIndex].alt
+          );
+          updateNavButtonVisibility();
+        }
+      }
+
+      function showNextImage() {
+        if (currentImageIndex < imageZoomElements.length - 1) {
+          currentImageIndex++;
+          openImage(
+            imageZoomElements[currentImageIndex].src,
+            imageZoomElements[currentImageIndex].alt
+          );
+          updateNavButtonVisibility();
+        }
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
