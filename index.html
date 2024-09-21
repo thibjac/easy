@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16690871634"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-16690871634");
+    </script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>EasyCharged | Plaatsing laadpalen</title>
@@ -44,7 +58,7 @@
 
       gtag("config", "G-W2FTHKKSLF");
     </script>
-    <script>
+    <!-- <script>
       var xhr = new XMLHttpRequest();
       fetch("https://api.ipify.org?format=json")
         .then((response) => response.json())
@@ -78,7 +92,12 @@
             })
           );
         });
-    </script>
+    </script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   </head>
 
   <body>
@@ -117,6 +136,174 @@
         </div>
       </div>
       <!-- Main image with text -->
+
+      <!-- Free consultation -->
+      <div class="container-fluid section-padding bg-light-grey">
+        <h3>Gratis afspraak en offerte</h3>
+        <div class="row bg-black p-0 m-0">
+          <div class="col-lg-8 text-white bg-black p-5">
+            <h2 class="my-0">Formulier</h2>
+            <form
+              class="row g-3 justify-content-start needs-validation p-0 m-0"
+              action="https://formsubmit.co/389be7fae4e40aca492086aea7ef651d"
+              method="POST"
+              novalidate
+            >
+              <input type="text" name="_honey" style="display: none" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://easycharged.eu/offerte-success.html"
+              />
+
+              <div class="col-md-6 p-0">
+                <label for="inputName" class="form-label">Voornaam*</label>
+                <input
+                  type="text"
+                  name="voornaam"
+                  class="form-control"
+                  id="inputName"
+                  placeholder="Marc"
+                  required
+                />
+                <div class="invalid-feedback">Dit veld is verplicht.</div>
+              </div>
+
+              <div class="col-md-6 p-0 ps-md-3">
+                <label for="inputSurname" class="form-label">Achternaam*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="achternaam"
+                  id="inputSurname"
+                  placeholder="Peeters"
+                  required
+                />
+                <div class="invalid-feedback">Dit veld is verplicht.</div>
+              </div>
+
+              <div class="col-md-6 p-0">
+                <label for="inputAddress" class="form-label"
+                  >E-mailadres*</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="inputAddress"
+                  placeholder="marc.peeters@easycharged.eu"
+                  required
+                />
+                <div class="invalid-feedback">Dit veld is verplicht.</div>
+              </div>
+
+              <div class="col-md-6 p-0 ps-md-3">
+                <div>
+                  <label for="phone" class="form-label">Telefoonnummer*</label>
+                </div>
+
+                <input
+                  class="form-control"
+                  name="gsm"
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  required
+                />
+                <div class="invalid-feedback">Dit veld is verplicht.</div>
+              </div>
+
+              <div class="col-md-6 p-0">
+                <label for="inputCity" class="form-label">Stad/Gemeente*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="stad"
+                  id="inputCity"
+                  placeholder="Leuven"
+                  required
+                />
+                <div class="invalid-feedback">Dit veld is verplicht.</div>
+              </div>
+
+              <div class="col-md-6 p-0 ps-md-3">
+                <label for="inputOptions" class="form-label">Optie*</label>
+                <select
+                  class="form-select"
+                  id="inputOptions"
+                  name="reden"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option value="">Selecteer een optie...</option>
+                  <option value="1">Ik wens een afspraak voor thuis.</option>
+                  <option value="2">
+                    Ik wens een afspraak voor mijn bedrijf.
+                  </option>
+                  <option value="3">Andere reden.</option>
+                </select>
+                <div class="invalid-feedback">Maak een keuze.</div>
+              </div>
+
+              <div class="mb-3 p-0">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Extra informatie</label
+                >
+                <textarea
+                  class="form-control"
+                  name="extra info"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Schrijf extra opmerkingen hier..."
+                ></textarea>
+              </div>
+
+              <div class="col-12 p-0">
+                <!-- button with onclick event that triggers the form validation. If the form is valid, triggers click of second button -->
+                <button
+                  id="verzenden"
+                  type="submit"
+                  class="overlay-button3 bg-info mt-4 mb-0"
+                >
+                  <div class="d-flex align-items-center">
+                    <div
+                      id="spinner"
+                      class="spinner-border text-green p-0 m-0 display-none"
+                      role="status"
+                    ></div>
+                  </div>
+                  <div id="text">Verzenden</div>
+                </button>
+                <div id="check" class="invalid-feedback display-none pt-1">
+                  (*) Gelieve alle verplichte velden correct in te vullen.
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-4 bg-green p-5">
+            <div>
+              <h3>Afspraak & offerte</h3>
+              <p>
+                Bent u geïnteresseerd in het laten installeren van een laadpaal
+                bij uw bedrijf of thuis, maar weet u niet goed waar te beginnen?
+                Wij helpen u graag verder! Maak een vrijblijvende afspraak met
+                ons team en ontvang een gepersonaliseerde offerte.
+              </p>
+              <p>
+                We geven deskundig advies voor de beste laadoplossing in uw
+                situatie en u ontvangt een offerte die geheel is afgestemd op uw
+                specifieke wensen en eisen.
+              </p>
+              <p>
+                Wacht dus niet langer en maak vandaag nog een afspraak met ons
+                team. Wij kijken er naar uit om u te helpen!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Free consultation -->
 
       <!-- EV chargers at home -->
       <div class="container-fluid section-padding" id="thuis">
@@ -1178,6 +1365,39 @@
     <!--Footer-->
     <my-footer></my-footer>
     <!--End of footer-->
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function validateForm() {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+                form.querySelector("#check").style.display = "block";
+              } else {
+                form.querySelector("#verzenden").style.cursor = "wait";
+                form.querySelector("#check").style.display = "none";
+                form.querySelector("#spinner").style.display = "block";
+                form.querySelector("#text").style.display = "none";
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
     <script>
       let currentImageIndex = 0;
       let imageZoomElements = document.querySelectorAll(".imagezoom");
@@ -1281,4 +1501,13 @@
     ></script>
     <script src="" async defer></script>
   </body>
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      initialCountry: "be",
+      preferredCountries: ["be", "de", "fr", "nl"],
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
 </html>

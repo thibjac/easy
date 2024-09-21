@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16690871634"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-16690871634");
+    </script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>EasyCharged | Plaatsing laadpalen</title>
@@ -255,7 +269,7 @@
                 <button
                   id="verzenden"
                   type="submit"
-                  class="overlay-button3 mt-4 mb-0"
+                  class="overlay-button3 bg-info mt-4 mb-0"
                 >
                   <div class="d-flex align-items-center">
                     <div
@@ -266,8 +280,8 @@
                   </div>
                   <div id="text">Verzenden</div>
                 </button>
-                <div id="check" class="invalid-feedback display-none">
-                  Gelieve alle verplichte velden correct in te vullen.
+                <div id="check" class="invalid-feedback display-none pt-1">
+                  (*) Gelieve alle verplichte velden correct in te vullen.
                 </div>
               </div>
             </form>
@@ -281,10 +295,10 @@
         class="container-fluid section-padding bg-light-grey"
         id="gratis_offerte"
       >
-        <h3>Gratis offerte/afspraak</h3>
+        <h3>Gratis afspraak en offerte</h3>
         <div class="row bg-black p-0 m-0">
           <div class="col-lg-8 text-white bg-black p-5">
-            <h2 class="my-0">Offerte aanvraag</h2>
+            <h2 class="my-0">Formulier</h2>
             <form
               class="row g-3 justify-content-start needs-validation p-0 m-0"
               action="https://formsubmit.co/389be7fae4e40aca492086aea7ef651d"
@@ -337,6 +351,7 @@
                 />
                 <div class="invalid-feedback">Dit veld is verplicht.</div>
               </div>
+
               <div class="col-md-6 p-0 ps-md-3">
                 <div>
                   <label for="phone" class="form-label">Telefoonnummer*</label>
@@ -466,7 +481,7 @@
                 <button
                   id="verzenden"
                   type="submit"
-                  class="overlay-button3 mt-4 mb-0"
+                  class="overlay-button3 bg-info mt-4 mb-0"
                 >
                   <div class="d-flex align-items-center">
                     <div
@@ -477,8 +492,8 @@
                   </div>
                   <div id="text">Verzenden</div>
                 </button>
-                <div id="check" class="invalid-feedback display-none">
-                  Gelieve alle verplichte velden correct in te vullen.
+                <div id="check" class="invalid-feedback display-none pt-1">
+                  (*) Gelieve alle verplichte velden correct in te vullen.
                 </div>
               </div>
             </form>
